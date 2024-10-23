@@ -1,0 +1,71 @@
+---
+#Laureen Oduor
+#Major: Data Science/Analytics
+#St ID: GR022268
+#Date: 10/22/2024
+
+title: "Parmesan-Crusted Chicken"
+author: "Lidey Heuck"
+date: "2024-08-15"
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Expected Delicious Result:
+![](C:\Users\bridg\OneDrive\Desktop\nec\Machine Learning\Week 1\parmesanrecipe.png)
+
+# Ingridients
+
+Yield: 4 to 6 servings
+
+* 3tablespoons olive oil
+* 1pound sweet potatoes (about 2 medium sweet potatoes), peeled and cut into ¾-inch cubes
+* 1medium yellow onion, chopped
+* 3tablespoons Thai red curry paste
+* 3garlic cloves, minced (about 1 tablespoon)
+* 1(1-inch) piece fresh ginger, peeled and grated (about 1 tablespoon)
+* 1red chile, such as Fresno or serrano, halved, seeds and ribs removed, then minced
+* 1teaspoon ground turmeric
+* 1cup red lentils, rinsed
+* 4cups low-sodium vegetable stock
+* 2teaspoons kosher salt, plus more to taste
+* 1(13-ounce) can full-fat coconut milk
+* 1(4- to 5-ounce) bag baby spinach
+* ½lime, juiced
+* Fresh cilantro leaves, for serving
+* Toasted unsweetened coconut flakes, for serving (optional)
+
+# Preparation
+
+## Step 1
+
+In a Dutch oven or pot, heat 2 tablespoons olive oil over medium-high. Add the sweet potatoes and cook, stirring occasionally, until browned all over, 5 to 7 minutes. Transfer the browned sweet potatoes to a plate and set aside.
+
+## Step 2
+
+Add the remaining 1 tablespoon olive oil to the pot and set the heat to medium-low. Add the onion and cook, stirring occasionally, until translucent, 4 to 6 minutes. Add the curry paste, garlic, ginger, chile and turmeric, and cook until fragrant, about 1 minute.
+
+## Step 3
+
+Add the lentils, stock, salt and browned sweet potatoes to the pot and bring to a boil over high. Lower the heat and simmer, uncovered, stirring occasionally, until the lentils are just tender, 20 to 25 minutes.
+
+## Step 4
+
+Add the coconut milk and simmer, stirring occasionally, until the liquid has reduced and the lentils are creamy and falling apart, 15 to 20 minutes.
+
+## Step 5
+
+Add the spinach and stir until just wilted, 2 to 3 minutes. Off the heat, stir in the lime juice and season with salt to taste.
+
+## Step 6
+
+Divide among shallow bowls and top with cilantro and coconut flakes, if using.
+
+
+
+

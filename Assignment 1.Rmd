@@ -1,0 +1,77 @@
+---
+title: "Week one"
+author: "Laureen Oduor"
+date: "2024-10-22"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Section One
+* Load mtcars, convert it to a tibble, and explore it with summar()
+
+The program will load a car dataset, transform it into a more readable format, and then utilizing a function to easily extract the most important data statistics.
+```{R}
+
+library(tidyverse)
+data("mtcars")
+mtcarsTib <- as_tibble(mtcars)
+summary(mtcarsTib)
+```
+# Section Two
+* Select all columns except qsec and vs
+
+From the dataset mtcars, the program is supposed to select all columns except qsec and vs.
+```{R}
+select(mtcarsTib, c(-qsec, -vs))
+```
+# Section Three
+* Filter for rows with cylinder numbers not equal to 8
+
+Filtering out 8-cylinder cars and selecting the others.
+
+```{R}
+filter(mtcarsTib, cyl != 8)
+```
+# Section Four
+* Group by gear, summarize the medians of mpg and disp, and mutate a new variable that is the mpg median divided by the disp median
+
+Cars are grouped by the number of gears they have, and the program calculates the median mpg and disp for each group. A new column is then created that shows how fuel efficiency compares to disp for each group.
+```{R}
+mtcarsTib %>%
+group_by(gear) %>%
+summarize(mpgMed = median(mpg), dispMed = median(disp)) %>%
+mutate(mpgOverDisp = mpgMed / dispMed)
+```
+# Section 5
+* Create a scatter plot of the drat and wt variables, and color by carb
+
+Creating a scatter plot to show the relationship between a car's drat and weight, while using color to indicate how many carb each automobile has. 
+```{R}
+ggplot(mtcarsTib, aes(drat, wt, col = carb)) +
+geom_point()
+ggplot(mtcarsTib, aes(drat, wt, col = as.factor(carb))) +
+geom_point()
+```
+# Section 6
+* Gather vs, am, gear, and carb into a single key-value pair
+
+Reshaping the data by consolidating four different columns into a single compact format with two columns: one for variable names and one for variable values.
+```{R}
+gather(mtcarsTib, key = "variable", value = "value", c(vs, am, gear, carb))
+```
+# Section 7
+* Iterate over each column of mtcars, returning a logical vector
+
+The program loops through each column in the dataset, testing a condition for each value. This gives a new list of logical vectors, with each value indicating whether or not the condition was met.
+```{R}
+map_lgl(mtcars, ~sum(.) > 1000)
+```
+
+
+
+
