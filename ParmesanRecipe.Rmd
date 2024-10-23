@@ -1,7 +1,6 @@
 ---
 #Laureen Oduor
 #Major: Data Science/Analytics
-#St ID: GR022268
 #Date: 10/22/2024
 
 title: "Parmesan-Crusted Chicken"
